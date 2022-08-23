@@ -10,7 +10,7 @@ Jamstack で Web サイトを構築するテンプレートを作成します。
 
 Web サイトと Web アプリではユーザーの利用目的が違うことから、機能や設計方針にも違いがあります。
 
-ここでは「Web サイト」とは静的なウェブページの集まりであると定義します。記事コンテンツのようなページを更新する部分は Headless CMS 等の API で事前取得して HTML に埋め込むようにします。
+ここでの「Web サイト」とは静的なウェブページの集まりであると定義します。記事のようなページを更新する部分は Headless CMS 等の API で事前取得して HTML に埋め込むようにします。
 
 このような Web サイトでは状態（state）の変化がほとんどありません。Web アプリのようにユーザーの操作によって状態が変化する構成は過剰になる可能性があります。
 
@@ -20,7 +20,7 @@ Web サイトと Web アプリではユーザーの利用目的が違うこと�
 
 静的ジェネレーター、ルーティング等の Web サイト生成の最低限の要素が揃っていることが採用理由です。
 
-Next.js も十分ですがそちらは参考になるものが別途あるため、当リポジトリでは Nuxt3 をベースとします。
+Next.js も十分ですが参考になるコンテンツが多数公開されているため、当リポジトリでは Nuxt3 をベースとします。
 
 ## Recommended Editor
 
@@ -31,23 +31,20 @@ Next.js も十分ですがそちらは参考になるものが別途あるため
 - Prettier ・・・ VS Code の[拡張機能](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)を使用
 - EditorConfig・・・VS Code の[拡張機能](https://editorconfig.org/#overview)を使用
 
+## 本リポジトリ制作時の開発環境（2022.08）
+
+- Mac OS Monterey 12.5.1
+- Node 16.15.1
+- npm 8.11.0
+
 # Nuxt 3 Minimal Starter
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Setup
 
-Make sure to install the dependencies:
-
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+npm ci
 ```
 
 ## Development Server
@@ -63,13 +60,7 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+npm run generate
 ```
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+静的生成したファイルは、.output/public に出力されます。
