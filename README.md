@@ -39,7 +39,8 @@ Next.js も十分ですが参考になるコンテンツが多数公開されて
 
 ## 設計に関するドキュメント
 
-- [ディレクトリ構造](docs/DIRECTLY.md)
+- [ディレクトリ構造について](docs/DIRECTLY.md)
+- [コンポーネントについて](docs/COMPONENTS.md)
 
 ---
 
