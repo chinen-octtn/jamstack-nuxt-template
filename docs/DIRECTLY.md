@@ -22,7 +22,9 @@ export default defineNuxtConfig({
 
 ## src/layouts
 
-ページのテンプレートとなるファイルを格納します。
+ページレイアウトのテンプレートとなるファイルを格納します。src/layouts/default.vue がデフォルトのテンプレートとしてすべてのページに適用されます。
+
+例外のレイアウトとなるページが存在する場合は、src/layouts 配下に別のテンプレートとなる Vue ファイルを作成します。
 
 参照：[Layouts Directory](https://v3.nuxtjs.org/guide/directory-structure/layouts)
 
