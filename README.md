@@ -51,7 +51,7 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 ## Setup
 
 ```bash
-npm ci
+pnpm install
 ```
 
 ## Development Server
@@ -59,7 +59,7 @@ npm ci
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 ## Production
@@ -67,7 +67,7 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run generate
+pnpm run generate
 ```
 
 静的生成したファイルは、.output/public に出力されます。
